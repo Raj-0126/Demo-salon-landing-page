@@ -31,7 +31,7 @@ class Particle{
 
         if(this.y < 0 || this.y > canvas.height)
             this.speedY *= -1;
-        
+
         //lines connecting the particles
         const dx=this.x-mouse.x;
         const dy=this.y-mouse.y;
@@ -52,8 +52,8 @@ class Particle{
         ctx.fill();
     }
 }
-
-for(let i=0;i<100;i++){
+//no. of particles
+for(let i=0;i<90;i++){
     particles.push(new Particle());
 }
 
@@ -72,7 +72,7 @@ function animate(){
         const dy=particles[i].y-particles[j].y;
 
         const distance=Math.sqrt(dx*dx+dy*dy);
-
+        //lines connecting the particles
         if(distance<120){
 
             ctx.beginPath();
