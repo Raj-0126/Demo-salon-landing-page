@@ -53,7 +53,7 @@ class Particle{
     }
 }
 //no. of particles
-for(let i=0;i<90;i++){
+for(let i=0;i<120;i++){
     particles.push(new Particle());
 }
 
